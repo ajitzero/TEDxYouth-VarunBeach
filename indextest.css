@@ -5,7 +5,7 @@
     overflow: hidden;
     background-color: #333;
     position: absolute;
-    width: 100%;
+    /*  width: 100%; */
     position: fixed;
     top: 10;
 }
@@ -36,7 +36,17 @@
 
 .speakersdiv {
     height: 600;
-    width: 600;
-    color: aqua;
+    width: 100%;
     position: absolute;
+}
+
+.speakersheading {
+    position: relative;
+    top: 20;
+    left: 50%;
+    right: 50%
+}
+
+.speakerimg {
+    border-radius: 50%;
 }

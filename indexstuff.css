@@ -1,48 +1,200 @@
-.navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: absolute;
-    width: 100%;
+.navbardiv {
     position: fixed;
-    top: 10;
+    top: 5px;
+    margin: 0;
+    width: 100%;
+    left: 0;
+}
+
+.navbar {
+    height: 46px;
+    background: #000000;
+    margin: 0
 }
 
 .navbarli {
     float: left;
+    list-style-type: none;
 }
 
 .navbarli a {
-    display: block;
+    font-family: 'roboto';
+    font-size: 20;
     color: white;
-    text-align: center;
-    padding: 14px 16px;
+    display: block;
+    padding: 5px;
     text-decoration: none;
+    text-align: center;
+    margin: 5;
 }
 
-.navbarli a:hover {
-    background-color: #111;
-}
-
-.translogo {
+.nvimagecontainer {
     position: fixed;
-    top: 30%;
-    left: 30%;
-    margin-top: -50px;
-    margin-left: -100px;
+    width: 100%;
+    height: 800;
+    top: 45;
+    overflow: hidden;
+    left: 0;
 }
 
-.speakersdiv {
-    height: 600;
+.nvimage {
+    position: relative;
+    margin: 0px;
     width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.tedxlogo {
     position: absolute;
+    top: 50;
+    left: 60;
+}
+
+.contentsdiv {
+    position: fixed;
+    width: 100%;
+    top: 45;
+    max-height: 1000;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    left: 0;
+    scroll-behavior: smooth;
+}
+
+.speakerscontainer {
+    width: 100%;
+    height: 500;
+    background-color: #F2F2F2;
+    margin-top: 800;
+    left: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.sponorscontainer {
+    width: 100%;
+    background-color: white;
+    margin-top: 0;
+    left: 0;
+    padding: 0;
 }
 
 .speakersheading {
     position: relative;
+    color: #E62B1E;
+    font-family: 'roboto';
+    font-size: 48;
+    font-style: normal;
+    font-weight: bold;
+    padding: 10px;
     top: 20;
-    left: 50%;
-    right: 50%
+    left: 50;
+    margin: 0;
+}
+
+.speakerimagesdiv {
+    display: flex;
+    position: relative;
+    width: 90%;
+    margin: 20 auto;
+}
+
+.speakerimagediv {
+    margin: 7px;
+    padding: 10px;
+}
+
+.speakerimage {
+    border-radius: 150px;
+    width: 300px;
+    height: 300;
+}
+
+.speakername {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 15px;
+    color: #000000;
+}
+
+.mediasponsorimage {
+    width: 200px;
+    height: 200px;
+    padding: 0 70;
+}
+
+.mediasponsorimagesdiv {
+    margin: 0 auto;
+    padding-top: 20;
+    display: flex;
+    width: 40%;
+}
+
+.sponsorimage {
+    width: 200px;
+    height: 200px;
+    padding: 0 50;
+}
+
+.sponsorimagesdiv {
+    margin: 0 auto;
+    padding-top: 20;
+    display: flex;
+    width: 70%;
+}
+
+.aboutuscontainer {
+    width: 100%;
+    background-color: black;
+    margin-top: 0;
+    left: 0;
+    padding: 0;
+    height: 500;
+}
+
+.aboutuspara {
+    font-family: Roboto;
+    font-size: 17;
+    color: white;
+    margin-left: 50;
+    width: 60%;
+}
+
+.team {
+    width: 100%;
+    background-color: #F2F2F2;
+    margin-top: 0;
+    left: 0;
+    padding: 0;
+    height: 500;
+}
+
+.teamimagesdiv {
+    display: flex;
+    position: relative;
+    width: 90%;
+    margin: 20 auto;
+}
+
+.teamimage {
+    border-radius: 100px;
+    width: 150;
+    height: 150;
+}
+
+.contentsdiv::-webkit-scrollbar {
+    width: 10px;
+}
+
+.contentsdiv::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #E62B1E;
 }
