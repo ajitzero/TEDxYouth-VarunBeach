@@ -1,0 +1,235 @@
+@import "base"
+
+html, body, #wrapper
+	box-sizing: border-box
+	margin: 0
+	min-height: 100%
+	outline: none
+	padding: 0
+	width: 100%
+
+html
+	scroll-behavior: smooth
+
+body
+	background: #000
+	color: #000
+	font-family: $sans-serif
+	font-size: 16px
+	overflow-y: auto
+	transition: $transition-val
+
+::selection
+	background: $highlight
+
+::-moz-selection
+	background: $highlight
+
+::-webkit-scrollbar
+	width: 10px
+
+::-webkit-scrollbar-track
+	background: #000
+
+::-webkit-scrollbar-thumb
+	background: hsla(0, 0%, 100%, .3)
+	border-radius: 5px
+
+::-webkit-scrollbar-thumb:hover
+	background: hsla(0, 0%, 100%, .4)
+	transition: $transition-val
+
+a, a:link, a:hover, a:focus
+	border-bottom: 2px solid transparent
+	transition: $transition-val
+
+a.lite
+	color: inherit
+	&:hover
+		color: inherit
+		text-decoration: underline
+
+h1, h2, h3, h4, h5, h6
+	font-family: $serif
+
+.btn-primary, .btn-primary:hover
+	background: $brand
+	border-radius: 0
+	border: none !important
+	color: #FFF
+	font-size: 1.1rem
+	font-weight: 700
+	letter-spacing: 1px
+	margin: 1rem 0
+	outline: none
+	padding: 1rem 1.5rem
+	text-transform: uppercase
+
+.btn-primary:hover
+	background: $off-brand
+
+.brand
+	color: $brand !important
+
+// Custom Navbar
+.navbar
+	background: none
+	text-align: center
+	transition: all 0.3s ease
+	.navbar-brand
+		color: #FFF
+	.navbar-toggler
+		border: none
+		outline: none
+		padding: 2rem
+		.navbar-toggler-icon
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='hsl(4, 80%, 100%)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")
+
+.nav-link
+	color: #FFF !important
+	font-family: $sans-serif
+	font-size: 18px
+	font-weight: 700
+	line-height: 18px
+	margin: 0 2rem
+	padding: 1rem
+	text-align: right
+	transition: $transition-val
+	&:hover
+		color: $brand !important
+	@media( #{$bp-md})
+		border-top: 2px solid transparent
+		font-size: 14px
+		margin: 0 1.2rem
+		padding: 1.5rem 0 !important
+		text-align: center
+		&:hover
+			border-top: 2px solid $brand !important
+
+.nav-item
+	&.active, &.active:hover
+		.nav-link
+			color: $brand !important
+			@media( #{$bp-md})
+				border-top: 2px solid $brand
+
+// reset
+.navbar-expand-xl
+	padding: 0
+
+// 100% height mobile menu
+@media( #{$bp-sm})
+	.navbar-collapse
+		&.collapse
+			height: 100vh
+			max-height: none
+			overflow-y: auto
+			transition: $transition-val
+		&.collapsing
+			height: 0 !important
+
+// Main Page
+#Home
+	background: url('/assets/bg-intro.jpg') no-repeat fixed
+	background-size: cover
+	background-position: left bottom
+	min-height: 100vh
+	padding-bottom: 3rem
+	@media( #{$bp-md})
+		background-position: center center
+
+	.row
+		padding-top: 150px
+
+	.logo
+		display: inline-block
+		margin: 0 0 1rem
+		max-width: 500px
+		padding: 0
+		width: 100%
+
+	p
+		background: #000
+		border-top: 4px solid $brand
+		color: #FFF
+		font-size: 1.1rem
+		margin: 2rem 0 0
+		padding: 1.5rem
+		text-align: justify
+		@media( #{$bp-md})
+			margin: 4rem 0 -1.75rem 5rem
+			padding: 1.5rem 1.5rem 3rem
+
+	.btn-primary
+		float: right
+		padding: 1rem 3.5rem
+		@media( #{$bp-sm})
+			margin: 3rem 0
+			width: 100%
+		@media( #{$bp-md})
+			display: inline-block
+			margin: 0
+
+.side-year
+	display: none
+	z-index: 9999
+	@media( #{$bp-md})
+		color: #FFF
+		display: block
+		font-family: monospace
+		font-size: 2rem
+		font-weight: 700
+		left: -17.5vh
+		letter-spacing: 11vh
+		margin-top: 0px
+		position: fixed
+		top: 27.5vh
+		transform: rotate(-90deg)
+		&::before
+			background: #FFF
+			bottom: 23px
+			content: " "
+			display: block
+			height: 2px
+			left: -55vh
+			margin: 0
+			position: absolute
+			width: 50vh
+		&::after
+			background: #FFF
+			bottom: 23px
+			content: " "
+			display: block
+			height: 2px
+			margin: 0
+			position: absolute
+			right: -15vh
+			width: 20vh
+
+.date-location
+	background: $brand
+	border-left: 2px solid #FFF
+	bottom: 0
+	color: #FFF
+	display: block
+	font-size: 1.1rem
+	padding: 1.5rem
+	right: 0
+	strong, span
+		display: block
+	@media( #{$bp-md})
+		padding: 2.5rem
+		position: absolute
+
+#About
+	background: #000
+	color: #FFF
+	padding-bottom: 5rem
+	h2
+		margin-top: 5rem
+
+#End-Game
+	background-size: 40%
+	background: #000 url('/assets/brand/bg-tedx-trans.png') bottom -30px center no-repeat
+	color: #FFF
+	padding-bottom: 150px

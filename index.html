@@ -1,143 +1,151 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link href="indexstuff.css" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- TODO: OpenGraph tags -->
+	<meta property="og:description" content="">
+	<meta property="og:image" content=""> <!-- Full URL -->
+	<meta property="og:site_name" content="">
+	<meta property="og:title" content="">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content=""> <!-- Full URL -->
+
+	<!-- TODO: Favicon & Theme -->
+	<!-- Use https://www.favicon-generator.org/ to generate icons -->
+	<meta name="msapplication-TileColor" content=""> <!-- HEX Code -->
+	<meta name="theme-color" content=""> <!-- HEX Code -->
+
+	<title>TEDxYouth@VarunBeach</title>
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- Custom CSS -->
+	<link href="style.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="navbardiv">
-        <ul class="navbar">
-            <li class="navbarli">
-                <a href="#speakers">speakers</a>
-            </li>
-            <li class="navbarli">
-                <a href="#aboutus">about us</a>
-            </li>
-            <li class="navbarli">
-                <a href="#sponsors">sponsors</a>
-            </li>
-            <li class="navbarli">
-                <a href="#team">the team</a>
-            </li>
-            <li class="navbarli">
-                <a href="#">register</a>
-            </li>
-        </ul>
+	<!-- Navigation section -->
+	<nav id="TopMenu" class="navbar navbar-expand-xl fixed-top">
+		<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#PrimaryMenu" aria-controls="menu" aria-expanded="false" aria-label="Toggle Navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div id="PrimaryMenu" class="collapse navbar-collapse">
+			<ul class="navbar-nav justify-content-center d-flex flex-fill">
+				<!-- <li class="nav-item active"> -->
+				<li class="nav-item">
+					<a class="nav-link" href="#Home">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#About">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#Speakers">Speakers</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#Sponsors">Sponsors</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#Contact">Contact</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#Register">Register</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
 
-    </div>
+	<div data-spy="scroll" data-target="#TopMenu" data-offset="0" id="wrapper" class="container-fluid">
+		<div class="side-year">2019</div>
+		<div id="Home" class="container-fluid">
+			<div class="row">
+				<div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-5 offset-lg-2">
+					<img draggable="false" class="logo" src="/assets/brand/logo-tedx-vb-trans.png" alt="TEDxYouth@VarunBeach Logo">
+					<p>Youth events are one of the most <strong class="brand">creative</strong> TEDx event types, since they are organized by, or catered toward, kids. As you might guess, these events are all about imagination and having fun!</p>
+					<a href="#" class="btn btn-primary">Learn More</a>
+				</div>
+			</div>
+			<div class="date-location">
+				<strong>November 23, 2019</strong>
+				<span>10:00am - 4:00pm IST (UTC+05:30)</span>
 
+				<hr>
 
-    <div class="nvimagecontainer">
-        <img src="nv1.v1.jpg" class="nvimage">
-        <img src="tedxlogotrans.png" class="tedxlogo">
-    </div>
-    <div class="contentsdiv">
-        <div class="speakerscontainer" id="speakers">
-            <p class="speakersheading">Speakers</p>
-            <div class="speakerimagesdiv">
-                <div class="speakerimagediv">
-                    <img src="vedantmehera.jpeg" class="speakerimage">
-                    <p class="speakername">Vedant Mehera</p>
-                </div>
-                <div class="speakerimagediv">
-                    <img src="anupyama.jpeg" class="speakerimage">
-                    <p class="speakername">Anup Yama</p>
-                </div>
-                <div class="speakerimagediv">
-                    <img src="bhargsetusharma.jpg" class="speakerimage">
-                    <p class="speakername">Bhargsetu Sharma</p>
-                </div>
-                <div class="speakerimagediv">
-                    <img src="imrankhan.png" class="speakerimage">
-                    <p class="speakername">Imran Khan</p>
-                </div>
-                <div class="speakerimagediv">
-                    <img src="sarithadsp.jpg" class="speakerimage">
-                    <p class="speakername">KGV Saritha</p>
-                </div>
-            </div>
-        </div>
+				<a href="https://g.page/NovotelVizag" class="lite" target="_blank">
+					<strong>Novotel, Visakhapatnam ↗</strong>
+				</a>
+				<span>Andhra Pradesh, India</span>
+			</div>
+		</div>
 
+		<div id="About" class="container-fluid">
+			<div class="row">
+				<div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-4 offset-lg-1">
+					<h2>About <strong class="brand">TEDx</strong></h2>
+					<p>In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TEDTalks video and live speakers combine to spark deep discussion and connection in a small group. These local, self-organized events are branded TEDx, where x = independently organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized (subject to certain rules and regulations).</p>
+				</div>
+				<div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-5 offset-lg-1">
+					<h2>About <strong class="brand">TEDxYouth</strong></h2>
+					<p class="lead">A TEDx youth event license follows the same format as the standard event license and fall within the same TEDx event rules, except this event is oriented towards youth. TEDxYouth licenses may be held by youth, adults, or a combination of both. For events held at schools, the license must be held by a current student, faculty or staff member.</p>
+					<a href="https://www.ted.com/tedx/events/34224" class="btn btn-primary" target="_blank">View the official listing</a>
+				</div>
+			</div>
+		</div>
 
-        <div class="aboutuscontainer" id="aboutus">
-            <p class="speakersheading">About Us</p>
-            <br>
-            <p class="aboutuspara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat explicabo amet provident cupiditate perspiciatis recusandae, nostrum ipsum sed, rem eaque vel earum, qui eos aspernatur fuga quod assumenda. Sapiente, repellendus! Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Aut ipsam sunt animi architecto accusantium deleniti amet officia molestias minus temporibus vitae facilis itaque officiis mollitia, quasi voluptas, quas consequatur! Odio? Lorem ipsum dolor,
-                sit amet consectetur adipisicing elit. Dolor eum reiciendis, id nisi sequi ipsa pariatur totam obcaecati voluptatem exercitationem atque animi mollitia! Nemo iste quidem neque laborum necessitatibus molestias? Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Error eaque, eveniet veniam quibusdam, minima, tempore laudantium similique nisi fuga maxime hic aperiam quis impedit sed. Magnam illum nesciunt architecto inventore. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. At eos provident culpa reprehenderit rem unde ipsam fugit consequuntur. Officiis suscipit odio quas nobis beatae blanditiis quos quasi nihil harum voluptate! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
-                est dignissimos assumenda doloribus, modi voluptatibus aspernatur ipsa culpa et, sint ratione vel sequi maiores error dolorem at adipisci magni obcaecati! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ratione quibusdam
-                deserunt similique ullam blanditiis sint, voluptatem fugiat cumque voluptas perspiciatis veritatis molestias quam nisi accusamus fugit architecto impedit eveniet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dolorem
-                dolore vel, quas sequi autem quisquam tempore eius repellat, corrupti magnam suscipit, quo quod porro praesentium quam ea quae quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, ab adipisci? Consectetur libero quas, ea
-                veniam nobis perferendis doloremque enim hic doloribus vel, animi sed quam quae corporis molestiae tenetur! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil nostrum velit, aliquam quibusdam unde ipsum atque corporis repellat
-                obcaecati magni suscipit saepe optio nesciunt non, praesentium pariatur eveniet ratione laudantium.
+		<footer id="End-Game" class="container-fluid">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-10 offset-sm-1 text-center">
+						<p>This website has been designed and developed by <a href="https://www.linkedin.com/in/souravpiku/" target="_blank" class="lite">Sourav Das</a> &amp; <a href="https://www.linkedin.com/in/AjitZero/" target="_blank" class="lite">Ajit Panigrahi</a>.</p>
+						<p>&copy; 2019 TEDxYouth@VarunBeach. This independent TEDxYouth event is operated under licence from <a href="https://ted.com" target="_blank" class="lite">TED</a>.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
 
-            </p>
+	<!-- Bootstrap core JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-        </div>
+	<script>
+		$(function () {
+			// Make navbar opaque on scroll
+			var navbar = $(".navbar");
 
-        <div class="sponorscontainer" id="sponsors">
-            <p style="text-align: center; font-family: 'Roboto'; font-weight: bold; font-size: 25; margin-bottom: 5; margin-top: 0; padding-top: 20">Media Partners</p>
-            <div class="mediasponsorimagesdiv">
-                <img src="yovizag.jpg" class="mediasponsorimage">
-                <img src="toi.jpg" class="mediasponsorimage">
-            </div>
-            <br>
-            <br>
-            <p style="text-align: center; font-family: 'Roboto'; font-weight: bold; font-size: 25; margin-bottom: 0; margin-top: 20; padding-top: 0">Sponsors</p>
-            <div class="sponsorimagesdiv">
-                <img src="redbull.jpg" class="sponsorimage">
-                <img src="jawa.jpg" class="sponsorimage">
-                <img src="ktm.png" class="sponsorimage">
-                <img src="kawasaki.png" class="sponsorimage">
-            </div>
-            <br>
-            <br>
-            <p style="text-align: center; font-family: 'Roboto'; font-weight: bold; font-size: 25; margin-bottom: 20; margin-top: 50; padding-top: 0">Hospitality Partner</p>
-            <img src="novotel.jpg" style="height: 200; width: 200; margin-left: auto; margin-right: auto; display: block">
-            <br><br>
-        </div>
+			function setBg() {
+				navbar.css({
+					'background': '#000'
+				});
+			}
+			function unsetBg() {
+				navbar.css({
+					'background': 'none'
+				});
+			}
 
+			$(".navbar-toggler").on('click', function() {
+				setBg();
+			});
 
-        <div class="team" id="team">
-            <p class="speakersheading">The Team</p>
-            <div class="teamimagesdiv">
-                <div class="speakerimagediv">
-                    <img src="messi.jpg" class="teamimage">
-                    <p class="speakername">Lionel Messi</p>
-                </div>
-                <div class="speakerimagediv">
-                    <img src="messi.jpg" class="teamimage">
-                    <p class="speakername">Lionel Messi</p>
-                </div>
-                <div class="speakerimagediv">
-                    <img src="messi.jpg" class="teamimage">
-                    <p class="speakername">Lionel Messi</p>
-                </div>
-                <div class="speakerimagediv">
-                    <img src="messi.jpg" class="teamimage">
-                    <p class="speakername">Lionel Messi</p>
-                </div>
-                <div class="speakerimagediv">
-                    <img src="messi.jpg" class="teamimage">
-                    <p class="speakername">Lionel Messi</p>
-                </div>
-                <div class="speakerimagediv">
-                    <img src="messi.jpg" class="teamimage">
-                    <p class="speakername">Lionel Messi</p>
-                </div>
+			$(window).on("scroll click", function() {
+				if ($(".navbar-toggler").attr('aria-expanded') === 'true' || $(this).scrollTop() >= 50) {
+					setBg();
+				} else {
+					unsetBg();
+				}
+			});
 
+			// Close navbar on click
+			$('.nav-link').on('click', function() {
+				$('.navbar-collapse').collapse('hide');
+			});
 
-            </div>
-
-        </div>
-
-
-    </div>
-
+		});
+	</script>
 
 </body>
-
 </html>
