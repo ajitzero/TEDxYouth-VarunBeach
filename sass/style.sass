@@ -52,10 +52,9 @@ a.lite
 h1, h2, h3, h4, h5, h6
 	font-family: $serif
 
-.btn-primary, .btn-primary:hover
+.btn, .btn:hover, .btn:focus
 	background: $brand
 	border-radius: 0
-	border: none !important
 	color: #FFF
 	font-size: 1.1rem
 	font-weight: 700
@@ -65,7 +64,21 @@ h1, h2, h3, h4, h5, h6
 	padding: 1rem 1.5rem
 	text-transform: uppercase
 
-.btn-primary:hover
+.btn-primary, .btn-primary:hover
+	border: 2px solid $brand !important
+
+.btn-secondary, .btn-secondary:hover
+	border: 2px solid #FFF !important
+
+.btn-white-bg
+	background: none
+	color: $brand
+	border: 2px solid $brand !important
+	&:hover
+		color: #FFF
+		border: 2px solid $off-brand !important
+
+.btn:hover
 	background: $off-brand
 
 .brand
@@ -157,7 +170,7 @@ h1, h2, h3, h4, h5, h6
 		padding: 1.5rem
 		text-align: justify
 		@media( #{$bp-md})
-			margin: 4rem 0 -1.75rem 5rem
+			margin: 4rem 0 -2rem 5rem
 			padding: 1.5rem 1.5rem 3rem
 
 	.btn-primary
@@ -183,6 +196,7 @@ h1, h2, h3, h4, h5, h6
 		letter-spacing: 11vh
 		margin-top: 0px
 		position: fixed
+		text-shadow: 0 1px 5px rgba(0,0,0,.25)
 		top: 27.5vh
 		transform: rotate(-90deg)
 		&::before
@@ -191,10 +205,11 @@ h1, h2, h3, h4, h5, h6
 			content: " "
 			display: block
 			height: 2px
-			left: -55vh
+			left: -555vh
 			margin: 0
 			position: absolute
-			width: 50vh
+			width: 550vh
+			box-shadow: 0 1px 5px rgba(0,0,0,.25)
 		&::after
 			background: #FFF
 			bottom: 23px
@@ -205,6 +220,7 @@ h1, h2, h3, h4, h5, h6
 			position: absolute
 			right: -15vh
 			width: 20vh
+			box-shadow: 0 1px 5px rgba(0,0,0,.25)
 
 .date-location
 	background: $brand
@@ -224,12 +240,52 @@ h1, h2, h3, h4, h5, h6
 #About
 	background: #000
 	color: #FFF
-	padding-bottom: 5rem
+	padding: 10rem
 	h2
 		margin-top: 6rem
+
+#Speakers
+	background: $brand
+	color: #FFF
+	padding: 10rem
+	svg
+		border: 5px dashed #FFF
+		fill: #FFF
+
+#Partners, #Contact
+	background: #FFF
+	color: #000
+	padding: 10rem
+	svg
+		border: 5px dashed $brand
+		fill: $off-brand
+
+#Speakers, #Partners, #Contact
+	svg
+		display: block
+		box-sizing: border-box
+		width: 100%
+		padding: 50px
+		border-radius: 30px
+		stroke-width: 0
+		transition: $transition-val
+		&:hover
+			padding: 35px
+
+#Contact::after
+	content: " "
+	background: $brand
+	display: block
+	height: 200px
+	margin-top: -150px
+	position: absolute
+	left: -5vw
+	width: 35vw
+	transform: skew(25deg)
 
 #End-Game
 	background-size: 40%
 	background: #000 url('/assets/brand/bg-tedx-trans.png') bottom -30px center no-repeat
 	color: #FFF
+	padding-top: 4rem
 	padding-bottom: 150px
