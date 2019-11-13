@@ -171,7 +171,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 #Home {
-  background: url("/assets/bg-intro.jpg") no-repeat fixed;
+  background: url("assets/bg-intro.jpg") no-repeat fixed;
   background-size: cover;
   background-position: left bottom;
   min-height: 100vh;
@@ -345,7 +345,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #End-Game {
   background-size: 40%;
-  background: #000 url("/assets/brand/bg-tedx-trans.png") bottom -30px center no-repeat;
+  background: #000 url("assets/brand/bg-tedx-trans.png") bottom -30px center no-repeat;
   color: #FFF;
   padding-top: 4rem;
   padding-bottom: 150px;
