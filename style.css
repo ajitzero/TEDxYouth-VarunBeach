@@ -164,7 +164,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-item.active .nav-link, .nav-item.active:hover .nav-link {
   color: #e62b1e !important;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .nav-item.active .nav-link, .nav-item.active:hover .nav-link {
     border-top: 2px solid #e62b1e;
   }
