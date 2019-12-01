@@ -243,23 +243,26 @@ h1, h2, h3, h4, h5, h6 {
 .side-year {
   display: none;
   z-index: 9999;
+  transform: rotate(-90deg);
 }
 @media (min-width: 768px) {
   .side-year {
-    color: #FFF;
     display: block;
+    left: -17.5vh;
+    position: fixed;
+    top: 27.5vh;
+  }
+  .side-year span {
+    display: block;
+    color: #FFF;
     font-family: monospace;
     font-size: 2rem;
     font-weight: 700;
-    left: -17.5vh;
     letter-spacing: 11vh;
     margin-top: 50px;
-    position: fixed;
     text-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-    top: 27.5vh;
-    transform: rotate(-90deg);
   }
-  .side-year::before {
+  .side-year span::before {
     background: #FFF;
     bottom: 23px;
     content: " ";
@@ -271,7 +274,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 550vh;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
   }
-  .side-year::after {
+  .side-year span::after {
     background: #FFF;
     bottom: 23px;
     content: " ";

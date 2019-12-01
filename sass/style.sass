@@ -195,41 +195,43 @@ h1, h2, h3, h4, h5, h6
 .side-year
 	display: none
 	z-index: 9999
+	transform: rotate(-90deg)
 	@media( #{$bp-md})
-		color: #FFF
 		display: block
-		font-family: monospace
-		font-size: 2rem
-		font-weight: 700
 		left: -17.5vh
-		letter-spacing: 11vh
-		margin-top: 50px
 		position: fixed
-		text-shadow: 0 1px 5px rgba(0,0,0,.25)
 		top: 27.5vh
-		transform: rotate(-90deg)
-		&::before
-			background: #FFF
-			bottom: 23px
-			content: " "
+		span
 			display: block
-			height: 2px
-			left: -555vh
-			margin: 0
-			position: absolute
-			width: 550vh
-			box-shadow: 0 1px 5px rgba(0,0,0,.25)
-		&::after
-			background: #FFF
-			bottom: 23px
-			content: " "
-			display: block
-			height: 2px
-			margin: 0
-			position: absolute
-			right: -45vh
-			width: 50vh
-			box-shadow: 0 1px 5px rgba(0,0,0,.25)
+			color: #FFF
+			font-family: monospace
+			font-size: 2rem
+			font-weight: 700
+			letter-spacing: 11vh
+			margin-top: 50px
+			text-shadow: 0 1px 5px rgba(0,0,0,.25)
+			&::before
+				background: #FFF
+				bottom: 23px
+				content: " "
+				display: block
+				height: 2px
+				left: -555vh
+				margin: 0
+				position: absolute
+				width: 550vh
+				box-shadow: 0 1px 5px rgba(0,0,0,.25)
+			&::after
+				background: #FFF
+				bottom: 23px
+				content: " "
+				display: block
+				height: 2px
+				margin: 0
+				position: absolute
+				right: -45vh
+				width: 50vh
+				box-shadow: 0 1px 5px rgba(0,0,0,.25)
 
 .date-location
 	background: $brand
